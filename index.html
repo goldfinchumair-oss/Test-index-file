@@ -327,6 +327,26 @@
   <div class="footer-logo"><div class="logo-dot"></div>CloudVertex</div>
   <div class="footer-copy">© 2025 CloudVertex Consulting. All rights reserved.</div>
 </footer>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DHp000003Tks5',
+				'Channel_for_External',
+				'https://scottdemoinstance-dev-ed.develop.my.site.com/ESWChannelforExternal1775046252582',
+				{
+					scrt2URL: 'https://scottdemoinstance-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://scottdemoinstance-dev-ed.develop.my.site.com/ESWChannelforExternal1775046252582/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 
 </body>
 </html>
